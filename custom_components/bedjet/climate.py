@@ -115,15 +115,15 @@ class HVACMode(Enum):
 
 
 class PresetMode(Enum):
-    off = HVACMode.off.value
-    cool = HVACMode.cool.value
-    heat = HVACMode.heat.value
-    dry = HVACMode.dry.value
-    turbo = 'turbo'
-    ext_ht = 'ext_ht'
-    m1 = 'm1'
-    m2 = 'm2'
-    m3 = 'm3'
+    Off = HVACMode.off.value
+    Cool = HVACMode.cool.value
+    Heat = HVACMode.heat.value
+    Dry = HVACMode.dry.value
+    Turbo = 'turbo'
+    Ext_Heat = 'ext_ht'
+    Preset1 = 'm1'
+    Preset2 = 'm2'
+    Preset3 = 'm3'
 
     def to_hvac(self) -> HVACMode:
         map = {
