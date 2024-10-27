@@ -81,14 +81,16 @@ class BedjetDevice:
             await entity.update_data()
     
 class FanMode(Enum):
-    min = 10
-    low = 25
-    p45 = 45
-    medium = 50
-    p55 = 55
-    p60 = 60
-    high = 75
-    max = 100
+    10 = 10
+    20 = 20
+    30 = 30
+    40 = 40
+    50 = 50
+    60 = 60
+    70 = 70
+    80 = 80
+    90 = 90
+    100 = 100
 
     @staticmethod
     def get_fan_mode(fan_pct: int | None):
