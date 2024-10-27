@@ -87,7 +87,7 @@ class FanMode(Enum):
     _40 = 40
     _50 = 50
     _60 = 60
-    med = 70
+    medium = 70
     _80 = 80
     _90 = 90
     high = 100
