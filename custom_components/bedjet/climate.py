@@ -105,10 +105,10 @@ class FanMode(Enum):
 
 
 class HVACMode(Enum):
-    off = OriginalHVACMode.OFF
-    cool = OriginalHVACMode.COOL
-    heat = OriginalHVACMode.HEAT
-    dry = OriginalHVACMode.DRY
+    Off = OriginalHVACMode.OFF
+    Cool = OriginalHVACMode.COOL
+    Heat = OriginalHVACMode.HEAT
+    Dry = OriginalHVACMode.DRY
 
     def command(self):
         return BEDJET_COMMANDS.get(self.value)
