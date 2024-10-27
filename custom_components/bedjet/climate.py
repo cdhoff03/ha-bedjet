@@ -105,25 +105,25 @@ class FanMode(Enum):
 
 
 class HVACMode(Enum):
-    Off = OriginalHVACMode.OFF
-    Cool = OriginalHVACMode.COOL
-    Heat = OriginalHVACMode.HEAT
-    Dry = OriginalHVACMode.DRY
+    off = OriginalHVACMode.OFF
+    cool = OriginalHVACMode.COOL
+    heat = OriginalHVACMode.HEAT
+    dry = OriginalHVACMode.DRY
 
     def command(self):
         return BEDJET_COMMANDS.get(self.value)
 
 
 class PresetMode(Enum):
-    Off = HVACMode.off.value
-    Cool = HVACMode.cool.value
-    Heat = HVACMode.heat.value
-    Dry = HVACMode.dry.value
-    Turbo = 'turbo'
-    Ext_Heat = 'ext_ht'
-    Preset1 = 'm1'
-    Preset2 = 'm2'
-    Preset3 = 'm3'
+    off = HVACMode.off.value
+    cool = HVACMode.cool.value
+    heat = HVACMode.heat.value
+    dry = HVACMode.dry.value
+    turbo = 'turbo'
+    ext_ht = 'ext_ht'
+    m1 = 'm1'
+    m2 = 'm2'
+    m3 = 'm3'
 
     def to_hvac(self) -> HVACMode:
         map = {
